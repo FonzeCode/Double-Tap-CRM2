@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "signup ."
+    "name ."
+    "email ."
+    "password ."
+    "sign ."
+    "text ."
+    "media ."
+    ;
+}
+.signup{
+    grid-area: signup;
+   
+}
+.name{
+    grid-area: name
+}
+
+.email{
+    grid-area: email
+}
+
+.password{
+    grid-area: password
+}
+
+.sign{
+    grid-area: sign
+}
+
+.text{
+    grid-area: text
+}
+
+.media{
+    grid-area:media;
+}
