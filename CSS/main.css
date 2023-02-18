@@ -6,7 +6,7 @@ body{
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 65vh repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
     "signup ."
@@ -20,28 +20,41 @@ body{
 }
 .signup{
     grid-area: signup;
+    text-align: center;
    
 }
 .name{
-    grid-area: name
+    grid-area: name;
+    text-align: center;
 }
 
 .email{
-    grid-area: email
+    grid-area: email;
+    text-align: center;
 }
 
 .password{
-    grid-area: password
+    grid-area: password;
+    text-align: center;
 }
 
 .sign{
-    grid-area: sign
+    grid-area: sign;
+    text-align: center;
 }
 
 .text{
-    grid-area: text
+    grid-area: text;
+    text-align: center;
 }
 
 .media{
     grid-area:media;
 }
+
+.media{
+    grid-area:media;
+    display: inline;
+    align-content: center;
+}
+
