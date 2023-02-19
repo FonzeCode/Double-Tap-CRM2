@@ -2,59 +2,132 @@ body{
     margin: 0;
 }
 
-
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 65vh repeat(2, 1fr);
+    grid-gap:3px;
+    grid-template-columns: 110vh repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
-    "signup ."
-    "name ."
-    "email ."
-    "password ."
-    "sign ."
-    "text ."
-    "media ."
+    "signup image image"
+    "name image image"
+    "email image image"
+    "password image image"
+    "sign image image"
+    "text image image"
+    "media image image"
     ;
 }
 .signup{
+    margin:10%;
+    display: block;
     grid-area: signup;
     text-align: center;
+    font-size:40px;
+    bottom: 60%;
    
 }
 .name{
     grid-area: name;
     text-align: center;
+
 }
 
 .email{
     grid-area: email;
+    display: block;
     text-align: center;
+
+} 
+
+.iconname{ 
+    height: 100px;
+    width: 100px;
+    background: url(/CSS/image/Page-1@2x.png) no-repeat;
+    background-size: 5%;
+    background-position:5%;
+    
 }
 
+.iconemail{ 
+    height: 100px;
+    width: 100px;
+    background: url(/CSS/image/small_email.svg) no-repeat;
+    background-size: 5%;
+    background-position:5%;
+}
+.iconpassword{ 
+    width:100px;
+    height: 100px;
+    background: url(/CSS/image/black_lock.svg.png) no-repeat;
+    background-size: 5%;
+    background-position: 5%;
+}
 .password{
+    display: block;
     grid-area: password;
     text-align: center;
 }
 
 .sign{
     grid-area: sign;
+    display: block;
     text-align: center;
 }
-
 .text{
+    display: block;
     grid-area: text;
     text-align: center;
 }
 
-.media{
-    grid-area:media;
+
+#form{
+    width:50%;
+    height: 20%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: lightgrey;
+
+}
+
+#sign{
+    grid-area:signup;
+    width: 30%;
+    padding:12px;
+    border-radius:20px;
+    background-color: blue;
+    border: none;
+    color:white;
+    font-size:17px;
 }
 
 .media{
+    display: block;
+    grid-area:media;
     grid-area:media;
     display: inline;
-    align-content: center;
+    text-align: center;
 }
 
+
+.images{
+    grid-area: image;
+    background-image:url(/CSS/image/Group10.png) ;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    background-size: 600px 400px, contain;
+    background-position: bottom;
+}
+
+.fa {
+    margin:5px;
+    padding: 15px;
+    font: size 20px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    border-radius:55%;
+    border-color: black;
+}
