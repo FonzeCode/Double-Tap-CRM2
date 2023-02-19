@@ -25,6 +25,7 @@ body{
     text-align: center;
     font-size:40px;
     bottom: 60%;
+    margin-bottom: 2%;
    
 }
 .name{
@@ -78,16 +79,17 @@ body{
     display: block;
     grid-area: text;
     text-align: center;
+    margin-bottom: -1%;
 }
 
 
 #form{
     width:50%;
     height: 20%;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
     border-radius: 30px;
-    border-color: lightgrey;
+    margin-top: 0%;
 
 }
 
@@ -113,12 +115,13 @@ body{
 
 .images{
     grid-area: image;
-    background-image:url(/CSS/image/Group10.png) ;
+    background-image:url(/CSS/image/Group10.png);
     background-repeat: no-repeat;
     width:100%;
     height:100%;
     background-size: 600px 400px, contain;
-    background-position: bottom;
+    background-position: 0px 200px;
+    /* margin-bottom: 4%; */
 }
 
 .fa {
@@ -129,5 +132,8 @@ body{
     text-align: center;
     text-decoration: none;
     border-radius:55%;
+    background-color: white;
     border-color: black;
+    outline: 2px solid lightgray;
+
 }
