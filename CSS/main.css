@@ -3,20 +3,27 @@ body{
 }
 
 .container{
+    margin: 10px;
     height: 100vh;
     display: grid;
     grid-gap:3px;
-    grid-template-columns: 110vh repeat(2, 1fr);
+    grid-template-columns: 110vh repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
-    "signup image image"
-    "name image image"
-    "email image image"
-    "password image image"
-    "sign image image"
-    "text image image"
-    "media image image"
+    "signup image"
+    "name image"
+    "email image"
+    "password image"
+    "sign image"
+    "text image"
+    "media image"
     ;
+}
+
+.container1{
+    display: block;
+    text-align: center;
+    margin:20px;
 }
 .signup{
     margin:10%;
@@ -26,6 +33,7 @@ body{
     font-size:40px;
     bottom: 60%;
     margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 .name{
@@ -79,7 +87,7 @@ body{
     display: block;
     grid-area: text;
     text-align: center;
-    margin-bottom: -1%;
+    margin-top:20px;
 }
 
 
@@ -95,18 +103,19 @@ body{
 
 #sign{
     grid-area:signup;
-    width: 30%;
+    width: 25%;
+    height: 60%;
     padding:12px;
-    border-radius:20px;
+    border-radius:30px;
     background-color: blue;
     border: none;
     color:white;
-    font-size:17px;
+    font-size:25px;
 }
 
 .media{
-    display: block;
-    grid-area:media;
+    /* margin-top: 0px; */
+    /* display: block; */
     grid-area:media;
     display: inline;
     text-align: center;
@@ -119,21 +128,23 @@ body{
     background-repeat: no-repeat;
     width:100%;
     height:100%;
-    background-size: 600px 400px, contain;
-    background-position: 0px 200px;
-    /* margin-bottom: 4%; */
+    background-size: 500px 500px, contain;
+    /* background-position: -5px 150px; */
+    margin-left: 0px;
+    margin-top: 90px;
 }
 
 .fa {
-    margin:5px;
-    padding: 15px;
+    display: inline-block;
+    margin-inline: 20px;
+    padding: 20px;
     font: size 20px;
     color:black;
     text-align: center;
     text-decoration: none;
-    border-radius:55%;
+    border-radius:50%;
     background-color: white;
     border-color: black;
     outline: 2px solid lightgray;
-
+    margin-top: 20px;
 }
